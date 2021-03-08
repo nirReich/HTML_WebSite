@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/590b1183a4.js" crossorigin="anonymous"></script>
+    <!-- tab icon -->
+    <link rel="icon" href="./public//naamaLogo.jpg">
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+    <title>נעמה קליש רייך - קלינאית תקשורת</title>
+</head>
+
+<body>
+    <!-- container for bootstrap -->
+    <div class="container">
+
+        <!-- header on top -->
+        <div id="header" class="fixed-top">
+
+            <div id="headerGrid" class="row">
+                <div class="col-1"></div>
+
+                <!-- naama main logo -->
+                <div class="col-2"><a href="#headPic"><img id="mainLogo" src="./public/naamaLogo.jpg" alt="logo"></a>
+                </div>
+                <div class="col-6">
+                    <h1 id="header_title_text">נעמה קליש רייך - קלינאית תקשורת</h1>
+                </div>
+                <div class="col-2"></div>
+
+                <!-- bars icon on the header -->
+                <div class="col-1"><button onclick="openNav()" id="barsBtn"><span id="sideBarsIcon"><i
+                                class="fas fa-bars"></i></span></button></div>
+
+
+            </div>
+            </nav>
+
+        </div>
+    </div>
+
+    <!-- the side menu -->
+    <div id="sideMenuDiv">
+        <div id="sideMenuContent">
+            <a href="#aboutMeTitle" onclick="closeNav()">
+                <p class="sideMenuLink">קצת עלי</p>
+            </a>
+            <a href="#myTreatments" onclick="closeNav()">
+                <p class="sideMenuLink">הטיפולים שלי</p>
+            </a>
+            <a href="#recommendCarousel" onclick="closeNav()">
+                <p class="sideMenuLink">מטופלים ממליצים</p>
+            </a>
+            <a href="#contactMeDiv" onclick="closeNav()">
+                <p class="sideMenuLink">צור קשר</p>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="restOfTheBody" onclick="closeNav()">
+        <!-- head picture -->
+        <div id="headPic">
+            <img src="./public/headerPic.jpg" alt="header pic" width=100%>
+        </div>
+
+        <!-- welcom paragraph -->
+        <div id="welcomTextDiv">
+            <p>!ברוכים הבאים</p>
+            <p>
+                שמי נעמה ואני קלינאית תקשורת עם ניסיון והכשרה באבחון וטיפול בתחומי התפתחות הילד, ובכללם: תקשורת, משחק,
+                שפה ודיבור, בהפרעות קול ובתפקודי הפה (היגוי, ריור, דחיקת לשון, אכילה ועוד)
+            </p>
+
+            <p>
+                בקליניקה שלי אני מאבחנת ומטפלת בפעוטות, ילדים ומבוגרים
+            </p>
+        </div>
+
+        <!-- about me section-->
+        <div class="sectionTitle" id="aboutMeTitle">
+            <p>קצת עלי</p>
+        </div>
+
+        <div id="aboutMeDiv">
+            <div class="row">
+                <div class="col-9">
+                    <p id="aboutMeText">
+                        קלינאית תקשורת המאבחנת ומטפלת בתחומי השפה, הדיבור, הקול ותפקודי הפה לילדים מגיל לידה
+                        ולמבוגרים.
+                        מוזמנים ליצור קשר לקביעת אבחון וטיפול.
+                    </p>
+
+                </div>
+                <div class="col-3">
+                    <img id="profilePic" src="./public/profilePic.jpg" alt="personalPic" width=75%>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- my treatments section -->
+        <div id="myTreatments">
+
+            <div class="sectionTitle">
+                <p> הטיפולים שלי </p>
+            </div>
+
+            <!-- treatments cards -->
+            <div class="row">
+                <div id="" class="col-1 treatCardColSides"></div>
+                <div class="col-2 treatCardCol">
+                    <div class="treatCards" onclick="openTreatModal(1)">
+                        <img src="./public/speech-bubble.png" alt="speak" width=50%>
+                        <p class="treatCardsText"> תקשורת </p>
+                    </div>
+                </div>
+                <div class="col-2 treatCardCol">
+                    <div class="treatCards" onclick="openTreatModal(2)">
+                        <img src="./public/voice.png" alt="speak" width=50%>
+                        <p class="treatCardsText">שפה ודיבור</p>
+                    </div>
+                </div>
+                <div class="col-2 treatCardCol">
+                    <div class="treatCards" onclick="openTreatModal(3)">
+                        <img src="./public//megaphone.png" alt="voice" width=50%>
+                        <p class="treatCardsText">הפרעות קול</p>
+                    </div>
+                </div>
+                <div class="col-2 treatCardCol">
+                    <div class="treatCards" onclick="openTreatModal(4)">
+                        <img src="./public/mouth.png" alt="speak" width=50%>
+                        <p class="treatCardsText">תפקודי פה</p>
+                    </div>
+                </div>
+                <div class="col-2 treatCardCol">
+                    <div class="treatCards" onclick="openTreatModal(5)">
+                        <img src="./public/graduation-hat.png" alt="teach" width=50%>
+                        <p class="treatCardsText">הדרכה מקצועית</p>
+                    </div>
+                </div>
+                <div class="col-1 "></div>
+            </div>
+
+        </div>
+
+        <!-- The treatments Modal -->
+        <div id="treatModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="modalPContent"></p>
+            </div>
+        </div>
+
+        <!-- recommendations carousel -->
+        <div id="recommendCarousel">
+            <div class="sectionTitle">
+                <p>מטופלים ממליצים</p>
+            </div>
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="10">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        
+                                <div class="clientRecommendCard">
+                                    <i class="fas fa-quote-right"></i>
+                                    <p>this is a recommendation <br> from client 1</p>
+                                </div>
+                            
+
+                    </div>
+                    <div class="carousel-item">
+
+                        <div class="clientRecommendCard">
+                            <i class="fas fa-quote-right"></i>
+                            <p>this is a recommendation <br> from client 2</p>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+
+                        <div class="clientRecommendCard">
+                            <i class="fas fa-quote-right"></i>
+                            <p>this is a recommendation <br> from client 3</p>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- contact me section -->
+
+        <div class="sectionTitle">
+            <p>צרו קשר</p>
+        </div>
+
+        <div id="contactMeDiv">
+            <div class="row align-items-center">
+                <div class="col-1 contactMeCol"></div>
+                <div class="col-6 contactMeCol">
+                    <table style="width:100%">
+                        <tr>
+
+                            <!-- google logo -->
+                            <a href="https://www.google.co.il/search?sxsrf=ALeKk000pDMg7QV0RXfFrojRvV2vy65tBQ%3A1613560676445&ei=ZPssYOzNGqiPlwTRja6ICg&q=%D7%A0%D7%A2%D7%9E%D7%94+%D7%A7%D7%9C%D7%99%D7%A9+%D7%A8%D7%99%D7%99%D7%9A-+%D7%A7%D7%9C%D7%99%D7%A0%D7%90%D7%99%D7%AA+%D7%AA%D7%A7%D7%A9%D7%95%D7%A8%D7%AA&oq=%D7%A0%D7%A2%D7%9E%D7%94+%D7%A7%D7%9C%D7%99%D7%A9+%D7%A8%D7%99%D7%99%D7%9A&gs_lcp=Cgdnd3Mtd2l6EAEYATIHCCMQsAMQJzIHCCMQsAMQJzIFCCYQsANQAFgAYMLgDGgBcAB4AIAB7gGIAe4BkgEDMi0xmAEAqgEHZ3dzLXdpesgBA8ABAQ&sclient=gws-wiz"
+                                target="_blank" title="חיפוש בגוגל נעמה קליש רייך">
+                                <div class="contactBtn">
+                                    <div class="row align-items-center">
+                                        <div class="col-2"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                                height="30" fill="currentColor" class="bi bi-google"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                                            </svg></div>
+                                        <div class="col-10">
+                                            <p class="txtInConBtn">Google serch "נעמה קליש רייך- קלינאית תקשורת"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </tr>
+                        <tr>
+                            <!-- facebook logo -->
+                            <a href="https://www.facebook.com/naamaklinait" target="_blank"
+                                title="לעמוד הפייסבוק של נעמה קליש רייך">
+                                <div class="contactBtn">
+                                    <div class="row">
+                                        <div id="facebookLogo" class="col-2"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="30" height="30" fill="currentColor" class="bi bi-facebook"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                            </svg></div>
+                                        <div class="col-10">
+                                            <p class="txtInConBtn">Facebook page "נעמה קליש רייך קלינאית תקשורת"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </tr>
+                        <tr>
+                            <!-- mail logo -->
+                            <a href="mailto:kalishn@gmail.com" title="שלח מייל לנעמה קליש רייך">
+                                <div class="contactBtn">
+                                    <div class="row align-items-center">
+                                        <div id="mailLogo" class="col-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                                            </svg>
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="txtInConBtn"> kalishn@gmail.com -שלח מייל ל</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <!-- text in the right side of contact me section -->
+                <div class="col-5 contactMeCol">
+                    <p>
+                        מוזמנים לפנות אלי <br />
+                        לבירורים ופרטים נוספים
+                    </p>
+                    <!-- phone logo -->
+                    <div id="phoneLogo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path
+                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>
+                        <p>050-2255125</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div id="footer">
+        built and designed by: <span id="myName"> Nir Reich </span>
+    </div>
+    <!-- bootstrap js links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+    <!-- js file links -->
+    <script src="./script.js"></script>
+    <!-- carousel script -->
+    <script src="pure-js-carousel.js"></script>
+
+    <!-- restOfTheBody div close tag -->
+    </div>
+
+</body>
+
+</html>
