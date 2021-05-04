@@ -426,7 +426,7 @@ a:active {
 
     #header{
         height: 12vw;
-        width: 80%;
+        width: 100%;
         background-color:rgb(194, 148, 196);
         padding: 2%;
     }
@@ -447,7 +447,7 @@ a:active {
     }
     #headPic{
         padding-top: 14%;
-        width: 96%;
+        width: 115%;
         
     }
 
@@ -458,7 +458,7 @@ a:active {
    }
    #sideMenuDiv{
     margin-top: 9%;
-    margin-right: 22%;
+    margin-right: 10%;
     width: 50vw;
     height:60vw;
     background-color: white;
