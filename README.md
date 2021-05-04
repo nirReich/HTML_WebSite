@@ -1,2 +1,4 @@
 # HTML_WebSite
-clean html JS css responsive web site
+Pure HTML, Javascript and responsive css with media query for large and mobile screens.
+
+
